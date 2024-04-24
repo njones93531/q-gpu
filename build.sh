@@ -1,8 +1,8 @@
 #!/bin/bash
-gcc_vrsn=11.3.0
-cuda_vrsn=11.8
+gcc_vrsn=12.2.0
+cuda_vrsn=12.0
 pyth_vrsn=3.8
-module load gcc/12.2.0
+module load gcc/${gcc_vrsn}
 export CC=/usr/local/gcc-${gcc_vrsn}/bin/gcc
 export CXX=/usr/local/gcc-${gcc_vrsn}/bin/g++
 cuda_comp=/usr/local/cuda-${cuda_vrsn}/bin/nvcc

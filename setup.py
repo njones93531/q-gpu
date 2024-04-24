@@ -19,7 +19,7 @@ if not _DISABLE_CONAN:
     try:
         from conans import client
     except ImportError:
-        subprocess.call([sys.executable, '-m', 'pip', 'install', 'conan>=1.31.2'])
+        subprocess.call([sys.executable, '-m', 'pip', 'install', 'conan>=1.31.2,<2.0.0'])
         from conans import client
 
 try:
